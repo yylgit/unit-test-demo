@@ -5,3 +5,4 @@ coverage
 .makefile.swp
 .swp
 *.swp
+.travis.yml.swp
