@@ -8,7 +8,7 @@
   },
   "scripts": {
     "pretest": "npm install",
-    "test": "istanbul cover _mocha -- --recursive --reporter spec"
+    "test": "mocha test/test.js"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
