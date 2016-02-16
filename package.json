@@ -8,7 +8,7 @@
   },
   "scripts": {
     "pretest": "npm install",
-    "test": "mocha test/test.js"
+    "test": "mocha --recursive"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
