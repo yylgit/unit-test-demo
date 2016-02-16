@@ -4,3 +4,4 @@ coverage
 .makefile.swo
 .makefile.swp
 .swp
+*.swp
