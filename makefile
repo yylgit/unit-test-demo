@@ -1,7 +1,7 @@
 ISTANBUL=./node_modules/.bin/istanbul
 _MOCHA=./node_modules/.bin/_mocha
 MOCHA=./node_modules/.bin/mocha
-OPTS:=--recursive --reporter nyan --watch
+OPTS:=--recursive --reporter spec
 test:
 	@$(MOCHA) $(OPTS)
 cover:
