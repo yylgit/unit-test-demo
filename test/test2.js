@@ -1,20 +1,5 @@
 //自己测试的代码
-var Cal = (function(){
-    var num = {
-        base:0
-    };
-    var add = function(){
-        num.base++;
-        return num.base;
-    }
-    var desc = function(){
-        --num.base;
-        return num.base;
-    }
-    return {
-        add,desc,num
-    }
-})();
+var Cal = require('../src/Cal.js');
 //ok,现在引用断言库chai
 var expect = require('chai').expect;
 //写出测试
