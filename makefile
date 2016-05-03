@@ -14,4 +14,10 @@ testDemo:
 	$(MOCHA) 'test/test.js' --reporter nyan
 testNest:testDemo
 	$(MOCHA) 'test/nested/test1.js'
-.PHONY:test cover testDemo testNest
+test-coveralls:
+	echo TRAVIS_JOB_ID $(TRAVIS_JOB_ID)
+	$(MAKE) test
+	$(ISTANBUL) cover \
+	$(_MOCHA) --report lcovonly -- -R spec && \
+		cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js || true
+.PHONY:test cover testDemo testNest test-coveralls
