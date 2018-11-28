@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "pretest": "npm install",
-    "test": "make test-coveralls"
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover --report lcov node_modules/mocha/bin/_mocha -- -R spec --recursive"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
